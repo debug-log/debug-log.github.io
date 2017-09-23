@@ -212,6 +212,20 @@ p {
   margin-bottom: 10;
   font-weight: 500;
 }
+.main-wrapper .image {
+  float: left;
+  width: 90px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.main-wrapper .topmargin {
+  margin-top: 3px;
+}
+
+.main-wrapper .round {
+  border-radius: 15px;
+}
+
 .main-wrapper .time {
   position: absolute;
   right: 0;
