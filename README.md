@@ -1,49 +1,66 @@
-![preview Long Haul](/preview.jpg)
+<a href="http://themes.3rdwavemedia.com/website-templates/orbit-free-resume-cv-template-for-developers/" target="_blank"><img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/Responsive-HTML5-Resume-CV-Template-for-Developers.png" alt="Responsive Resume/CV Template for Developers" /></a>
 
-Long Haul is a minimal jekyll theme built with COMPASS / SASS / SUSY and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
+##Theme Details & Demo
 
-If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
+**Demo:** http://themes.3rdwavemedia.com/website-templates/orbit-free-resume-cv-template-for-developers/
 
-####[View Demo](http://brianmaierjr.com/long-haul)
+Orbit is a free resume/CV template designed for developers. Looking to **impress your potential employer**? Get this template and you can **send an online resume/CV** instead of a word/pdf attachment. You can **easily make different versions of your online resume/CV** to tailor for different job positions too. 
 
-## Features
+The template comes with **6 colour schemes**. The source LESS files are included so it’s quick and easy to change the styling and colour scheme.
 
-- Minimal, Type Focused Design
-- Built with SASS + COMPASS
-- Layout with SUSY Grid
-- SVG Social Icons
-- Responsive Nav Menu
-- XML Feed for RSS Readers
-- Contact Form via Formspree
-- 5 Post Loop with excerpt on Home Page
-- Previous / Next Post Navigation
-- Estimated Reading Time for posts
-- Stylish Drop Cap on posts
-- A Better Type Scale for all devices
+##Author & License
 
-## Setup
+This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
-3. Clone it
-4. [Install Bundler](http://bundler.io/)
-5. Run `bundle install`
-6. Run Jekyll `jekyll serve -w`
-7. Run `compass watch`
-8. Customize!
+If you'd like to **use the template without the attribution**, you can check out **other license options** via the [theme website](http://themes.3rdwavemedia.com/website-templates/orbit-free-resume-cv-template-for-developers/)
 
-## Site Settings
+####Follow Xiaoying
 
-The main settings can be found inside the `_config.yml` file:
+[Twitter](https://twitter.com/3rdwave_themes)
 
-- **title:** title of your site
-- **description:** description of your site
-- **url:** your url
-- **paginate:** the amount of posts displayed on homepage
-- **navigation:** these are the links in the main site navigation
-- **social** diverse social media usernames (optional)
-- **google_analytics** Google Analytics key (optional)
+[Facebook](https://www.facebook.com/3rdwavethemes/)
 
-## License
+[Dribbble](https://dribbble.com/Xiaoying)
 
-This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+[Linkedin](https://uk.linkedin.com/in/xiaoying)
+
+
+##Latest Version
+**v1.0** - 29 Jan 2016
+
+[Changelog](http://themes.3rdwavemedia.com/website-templates/orbit-free-resume-cv-template-for-developers/?target=changelog)
+
+##Colour Schemes
+
+#### Colour 1 (styles.css)
+<img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/free-resume-cv-bootstrap-template-for-developer-color-1.jpg" width="300" alt="Orbit color 1" />
+
+#### Colour 2 (styles-2.css)
+<img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/free-resume-cv-bootstrap-template-for-developer-color-2.jpg" width="300" alt="Orbit color 2" />
+
+#### Colour 3 (styles-3.css)
+<img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/free-resume-cv-bootstrap-template-for-developer-color-3.jpg" width="300" alt="Orbit color 3" />
+
+#### Colour 4 (styles-4.css)
+<img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/free-resume-cv-bootstrap-template-for-developer-color-4.jpg" width="300" alt="Orbit color 4" />
+
+#### Colour 5 (styles-5.css)
+<img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/free-resume-cv-bootstrap-template-for-developer-color-5.jpg" width="300" alt="Orbit color 5" />
+
+#### Colour 6 (styles-6.css)
+<img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/free-resume-cv-bootstrap-template-for-developer-color-6.jpg" width="300" alt="Orbit color 6" />
+
+##Features
+
+-  Fully Responsive
+-  HTML5 + CSS3
+-  Built on Bootstrap 3
+-  6 Colour Schemes
+-  600+ FontAwesome icons
+-  **LESS** files included
+-  Compatible with all modern browsers
+
+##Credits
+- [Bootstrap](http://getbootstrap.com/)
+- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
+- [jQuery](http://jquery.com/)
