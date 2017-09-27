@@ -208,9 +208,12 @@ p {
 .main-wrapper .job-title {
   color: #3F4650;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
   font-weight: 500;
+}
+.main-wrapper .job-details{
+  margin-bottom: 25px;
 }
 .main-wrapper .activity-title {
   color: #3F4650;
