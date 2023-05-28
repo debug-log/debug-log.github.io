@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2022-08-01
+date: 2015-10-22 15:59:00-0400
 inline: true
+related_posts: false
 ---
 
-A full research paper, titled "Prediction-based One-shot Dynamic Parking Pricing," is accepted at CIKM 2022.
+A simple inline announcement.

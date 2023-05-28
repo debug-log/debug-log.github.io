@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2021-05-17
+date: 2016-01-15 07:59:00-0400
 inline: true
+related_posts: false
 ---
 
-A full research paper, titled "Large-Scale Data-Driven Airline Market Influence Maximization," is accepted at KDD 2021.
+A simple inline announcement with Markdown emoji! :sparkles: :smile:
