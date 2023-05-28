@@ -188,7 +188,7 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
-      path: "assets/**/*.*"
+      path: "assets"
     values:
       sitemap: false
 
@@ -288,7 +288,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    true  # enables google analytics
+enable_google_analytics:    false  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
@@ -301,7 +301,7 @@ enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
-enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+enable_medium_zoom:         false   # enables image zoom feature (as on medium.com)
 
 
 # -----------------------------------------------------------------------------
