@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: ML Research Engineer 💻
+subtitle: UX Researcher / Product Data Analyst 💻
 
 profile:
   align: right
-  image: prof_pic.jpeg
+  image: prof_pic_ein.jpeg
   image_circular: false # crops the image to make it circular
   address: >
 
@@ -14,19 +14,18 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-E-mail: seoyoungh@yonsei.ac.kr  
-Phone: +82-10-2474-1433
+E-mail: sea900318@gmail.com
 
 <br/>
 
-I'm a master's student at <a href='https://sites.google.com/view/npark'>Big Data Analytics Lab</a>, Yonsei University. 
+<!-- I'm a master's student at <a href='https://sites.google.com/view/npark'>Big Data Analytics Lab</a>, Yonsei University. 
 My research advisor is Prof. Noseong Park. 
 My research interests include recommender systems, predictive modeling, and neural differential equations. 
 I enjoy solving various real-world problems with data-driven deep learning algorithms.
 Here is a full <a href='https://seoyoungh.github.io/files/CV_seoyoung.pdf'>Curriculum Vitae</a>.
 
 When I’m not looking at code, I can usually be found travelling✈️, doing yoga🧘🏻‍♀️, doing workouts💪🏻, or watching films.
-I desire to be someone who contributes to and changes the world. I want to live forever young, as my name says!
+I desire to be someone who contributes to and changes the world. I want to live forever young, as my name says! -->
 
 <br/>
 
