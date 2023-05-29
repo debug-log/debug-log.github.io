@@ -139,6 +139,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: -apple-system, "Spoqa Han Sans Neo", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 hr {
