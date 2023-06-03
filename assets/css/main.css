@@ -17,8 +17,9 @@
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-divider-color: rgba(0,0,0,.2);
   --global-card-bg-color: #ffffff;
+  --global-info-block: #e3ece4;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -191,8 +192,9 @@ blockquote {
 }
 
 .caption {
+  color: var(--global-text-color-light);
   font-size: 0.875rem;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -205,6 +207,7 @@ blockquote {
 }
 .card .card-title {
   color: var(--global-text-color);
+  font-size: 1rem;
 }
 .card .card-item {
   width: auto;
@@ -718,6 +721,15 @@ html.transition *:after {
 .post .post-meta {
   color: var(--global-text-color-light);
   font-size: 0.875rem;
+  margin-bottom: 0;
+}
+.post .post-info {
+  color: var(--global-text-color);
+  background-color: var(--global-info-block);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+.post .post-info p {
   margin-bottom: 0;
 }
 .post .post-tags {

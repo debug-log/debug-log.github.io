@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>project 6 | Sihyeong  Ahn</title>
+    <title>모바일 게임 터치트래킹 분석 | Sihyeong  Ahn</title>
     <meta name="author" content="Sihyeong  Ahn">
-    <meta name="description" content="a project with no image">
+    <meta name="description" content="모바일 게임 가상 조익스틱 조작의 불편하다는 가설을 검증하기 위해 터치 영역을 히트맵으로 시각화한 프로젝트">
     <meta name="keywords" content="ux-researcher, product-analyst,">
 
 
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://debug-log.github.io/projects/6_project/">
+    <link rel="canonical" href="https://debug-log.github.io/projects/6_touchtracking/">
 
     <!-- Dark Mode -->
     
@@ -112,28 +112,46 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
-        <div class="post">
+        <!-- project.html -->
+<div class="post">
 
-          <header class="post-header">
-            <h1 class="post-title">project 6</h1>
-            <p class="post-description">a project with no image</p>
-          </header>
+  <header class="post-header">
+    <h1 class="post-title">모바일 게임 터치트래킹 분석</h1>
 
-          <article>
-            <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+    <p class="post-description">모바일 게임 가상 조익스틱 조작의 불편하다는 가설을 검증하기 위해 터치 영역을 히트맵으로 시각화한 프로젝트</p>
+    <p class="post-meta">July, 2020</p>
+    <p></p>
+    <div class="post-info">
+      <li>
+<b>주요역할</b>         |  구현 및 시각화 전담</li>
+      <li>
+<b>사용 언어/툴</b>  |  Python</li>
+    </div>
+  </header>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+  <article>
+    <hr>
+<p><br></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<h4 id="1-배경">1. 배경</h4>
+
+<ul>
+  <li>신규 모바일 게임의 게임성을 검증하는 과정에서 조작성에 이슈가 있을 것으로 가설을 세움</li>
+  <li>캐릭터의 조작이 불편했으며, 근본적인 원인이 가상 조이스틱의 중심 영역이 유저의 생각보다 너무 쉽게 움직여 Thumb Zone을 자꾸 벗어나게 될 것이라는 가설을 세움</li>
+</ul>
+
+<p><br></p>
+
+<h4 id="2-목표">2. 목표</h4>
+
+<ul>
+  <li>사용자가 모바일 게임의 가상 조이스틱을 조작할 때 터치하는 영역을 시각화</li>
+  <li>조작에 이슈가 있을 것으로 판단하는 게임 vs 타 게임의 조작 범위를 비교하기</li>
+</ul>
+
+<p><br></p>
+
+<h4 id="3-과정">3. 과정</h4>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -143,7 +161,7 @@ img: /assets/img/12.jpg
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/adb.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) adb를 활용해 디바이스 로그를 기록 중" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -157,21 +175,7 @@ img: /assets/img/12.jpg
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/touchlog.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) 기록된 텍스트 파일" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -180,8 +184,43 @@ img: /assets/img/12.jpg
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    (1) adb를 활용해 디바이스 로그를 기록 중, (2) 기록된 텍스트 파일
 </div>
+
+<ul>
+  <li>안드로이드 디버깅 툴(adb)을 활용해 테스터가 플레이하는 동안의 터치 영역을 기록</li>
+  <li>디바이스에 기록된 터치 좌표 텍스트파일을 전처리하여, time 및 x, y 좌표 값을 가지는 DataFrame으로 변환</li>
+</ul>
+
+<p><br></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+
+  
+
+  <video src="/assets/projects/6_touchtracking/output_brawlstars.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" controls=""></video>
+
+  
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Brawl Stars 플레이 영상에 터치 기록을 시각화
+</div>
+<ul>
+  <li>터치 영역이 잘 트래킹 되는지 동영상에 매핑하여 확인함</li>
+</ul>
+
+<p><br></p>
+
+<h4 id="4-결과">4. 결과</h4>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <figure>
@@ -190,7 +229,21 @@ img: /assets/img/12.jpg
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/brawlstars.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) Brawl Stars 터치 히트맵" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/projects/6_touchtracking/battleground.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) PUBG 모바일 터치 히트맵" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -199,66 +252,30 @@ img: /assets/img/12.jpg
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    (1) Brawl Stars 터치 히트맵, (2) PUBG 모바일 터치 히트맵
 </div>
+<ul>
+  <li>터치 영역을 이미지에 히트맵으로 시각화하여 타 게임의 히트맵과 비교함
+    <ul>
+      <li>보안 이슈로 타 게임의 이미지를 활용함</li>
+    </ul>
+  </li>
+  <li>히트맵을 확인한 결과, 가상 조이스틱이 너무 많이 움직여 Thumb Zone에서 많이 벗어나 불편하다는 것을 검증</li>
+</ul>
 
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal its glory in the next row of images.</p>
+<p><br></p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
+<h4 id="5-주요-임팩트">5. 주요 임팩트</h4>
 
-  <picture>
-    
+<ul>
+  <li>가상 조이스틱의 중심영역이 너무 많이 움직여 조작이 불편하다는 가설을 채택</li>
+  <li>테스터의 정성의견과 종합하여 개발팀에 조작 이슈에 대한 근거를 제시하여 조작 방식을 변경함</li>
+</ul>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/6.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-  </picture>
+  </article>
 
-</figure>
-
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" rel="external nofollow noopener" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-
-          </article>
-
-        </div>
 
       
     </div>
