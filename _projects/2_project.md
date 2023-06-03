@@ -2,9 +2,9 @@
 layout: page
 title: project 2
 description: a project with a background image
-img: assets/img/3.jpg
+img: assets/img/1.jpg
 importance: 2
-category: Data Analysis
+category: Research
 ---
 
 Every project has a beautiful feature showcase page.

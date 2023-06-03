@@ -2,10 +2,10 @@
 layout: page
 title: project 3
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: assets/img/1.jpg
 redirect: https://unsplash.com
 importance: 3
-category: Data Analysis
+category: Research
 ---
 
 Every project has a beautiful feature showcase page.

@@ -2,9 +2,9 @@
 layout: page
 title: project 4
 description: another without an image
-img:
-importance: 3
-category: UX Research
+img: assets/img/1.jpg
+importance: 4
+category: Tool
 ---
 
 Every project has a beautiful feature showcase page.
