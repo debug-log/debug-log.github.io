@@ -11,9 +11,10 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%B, %Y" }}</p>
     <p></p>
     <div class="post-info">
-      <li><b>주요역할</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp; {{ page.role }}</li>
-      <li><b>사용 언어/툴</b>&nbsp; |&nbsp; {{ page.skills }}</li>
+      {%- if page.role %}<li><b>주요역할</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp; {{ page.role }}</li>{%- endif %}
+      {%- if page.skills %}<li><b>사용 언어/툴</b>&nbsp; |&nbsp; {{ page.skills }}</li>{%- endif %}
     </div>
+    <p style="font-size: 0.7em; color:gray; padding-top: 10px; text-align:right";>※보안 이슈로 일부 이미지와 데이터는 임의로 가공하였습니다.</p>
   </header>
 
   <article>
