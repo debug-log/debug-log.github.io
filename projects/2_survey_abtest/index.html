@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>설문 데이터 분석 툴 개발 | Sihyeong  Ahn</title>
+    <title>설문조사 개인화 응답률 A/B 테스트 | Sihyeong  Ahn</title>
     <meta name="author" content="Sihyeong  Ahn">
-    <meta name="description" content="대량의 설문조사 주관식 응답 데이터를 분석하여 시각화">
+    <meta name="description" content="설문조사 응답률 향상시키기 위해 개인화된 설문의 효과를 검증">
     <meta name="keywords" content="ux-researcher, product-analyst,">
 
 
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://debug-log.github.io/projects/4_survey_tool/">
+    <link rel="canonical" href="https://debug-log.github.io/projects/2_survey_abtest/">
 
     <!-- Dark Mode -->
     
@@ -116,16 +116,14 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">설문 데이터 분석 툴 개발</h1>
+    <h1 class="post-title">설문조사 개인화 응답률 A/B 테스트</h1>
 
-    <p class="post-description">대량의 설문조사 주관식 응답 데이터를 분석하여 시각화</p>
-    <p class="post-meta">August, 2022</p>
+    <p class="post-description">설문조사 응답률 향상시키기 위해 개인화된 설문의 효과를 검증</p>
+    <p class="post-meta">May, 2023</p>
     <p></p>
     <div class="post-info">
 <li>
-<b>주요역할</b>         |  개발 전담</li>
-<li>
-<b>사용 언어/툴</b>  |  VBA, Python (tkinter)</li>
+<b>주요역할</b>         |  테스트 설계 및 분석</li>
     </div>
     <p style="font-size: 0.7em; color:gray; padding-top: 10px; text-align:right">※보안 이슈로 일부 이미지와 데이터는 임의로 가공하였습니다.</p>
   </header>
@@ -136,13 +134,44 @@
 
 <h4 id="1-배경">1. 배경</h4>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/projects/2_survey_abtest/survey_example.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) 이미지 배너형 설문조사 예시" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/projects/2_survey_abtest/personalization_example.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) 개인화 텍스트 기능 예시" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    (1) 이미지 배너형 설문조사 예시, (2) 개인화 텍스트 기능 예시
+</div>
+
 <ul>
-  <li>설문조사 결과를 분석하는 데에 시간 리소스가 많이 발생함
-    <ul>
-      <li>기존에는 엑셀 피벗테이블 기능을 활용하여 수동으로 분석함</li>
-    </ul>
-  </li>
-  <li>반복적인 업무로 UX리서처들이 설문 데이터를 깊이 분석할 시간이 항상 부족했음</li>
+  <li>기존에는 게임 종료 화면에서 이미지 배너 노출을 통해 설문을 수집함</li>
+  <li>이미지 배너 대신 유저의 게임 데이터를 가져와 개인화된 텍스트를 넣을 수 있는 기능이 추가됨</li>
+  <li>개인화 기능을 활용하여 설문을 노출한다면, 설문 참여률이 더 높아질 것이라는 가설을 세움</li>
 </ul>
 
 <p><br></p>
@@ -150,13 +179,13 @@
 <h4 id="2-목표">2. 목표</h4>
 
 <ul>
-  <li>설문 결과 분석에서 반복적입 작업을 최대한 자동화</li>
-  <li>UX리서처들이 사용할 수 있도록 인하우스 툴 개발하기</li>
+  <li>개인화된 설문 노출 방식의 참여률 증가 효과를 검증</li>
+  <li>기존 이미지 배너 방식에 비해 효과가 유의미하다면, 해당 방식을 채택하여 전체 유저에게 적용</li>
 </ul>
 
 <p><br></p>
 
-<h4 id="3-과정">3. 과정</h4>
+<h4 id="3-1-실험-1주차">3-1. 실험 (1주차)</h4>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -166,7 +195,21 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/4_survey_tool/tool_vba.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="VBA로 개발한 엑셀 매크로" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/2_survey_abtest/survey_a_1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(A) 이미지 배너 (기존)" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/projects/2_survey_abtest/survey_b.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(B) 개인화 설문" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -175,20 +218,23 @@
     </div>
 </div>
 <div class="caption">
-    VBA로 개발한 엑셀 매크로
+    (A) 이미지 배너 (기존), (B) 개인화 설문
 </div>
 
 <ul>
-  <li>초기에는 대부분이 MS Office를 사용하는 것을 고려하여 VBA로 자동화 툴을 개발함
+  <li>사용자를 A그룹과 B그룹으로 분리하여 A안, B안을 노출함</li>
+  <li>A그룹에는 기존에 노출하던 방식을 유지하고, B그룹은 유저 닉네임을 호명하며 설문 참여를 유도함</li>
+  <li>결과
     <ul>
-      <li>PPT로 바로 복사가 가능하도록 차트 생성이 필요했음</li>
+      <li>B안의 노출 대비 설문 응답률이 A안 대비 약 3배 높았음</li>
+      <li>유저들이 기존에 보지 못한 새로운 유형의 설문 유형이라 참여율이 높아졌을 수 있음 (Novelty Effect)</li>
     </ul>
   </li>
-  <li>약 1년 정도 사용하다보니 필요한 기능이 점차 늘어나고, VBA로는 유지보수하기도 어려웠음</li>
-  <li>향후 확장성을 고려하여 다양한 라이브러리를 활용할 수 있는 Python으로 GUI 툴을 개발하기로 결정</li>
 </ul>
 
 <p><br></p>
+
+<h4 id="3-2-실험-2주차">3-2. 실험 (2주차)</h4>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -198,7 +244,21 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/4_survey_tool/tool_python.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Python으로 개발한 GUI 설문조사 분석 툴" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/2_survey_abtest/survey_a_2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(A) 이미지 배너 (신규)" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/projects/2_survey_abtest/survey_b.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(B) 개인화 설문" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -207,21 +267,23 @@
     </div>
 </div>
 <div class="caption">
-    Python으로 개발한 GUI 설문조사 분석 툴
+    (A) 이미지 배너 (신규), (B) 개인화 설문
 </div>
 
 <ul>
-  <li>Python 기본 라이브러리에 포함된 tkinter로 GUI를 구현
+  <li>A그룹의 이미지 배너도 새로운 디자인으로 변경하고, B그룹은 개인화 설문을 그대로 유지</li>
+  <li>결과
     <ul>
-      <li>전반적인 디자인은 오픈소스 통계 분석 도구인 jamovi를 참조</li>
+      <li>B안의 노출 대비 설문 응답률이 A안 대비 약 2.5배 높았음</li>
+      <li>A, B그룹 모두 노출 대비 설문 응답률이 1주차와 거의 동일함</li>
+      <li>이미지 배너 타입에서는 새로운 디자인을 적용하더라도 응답률 변화가 거의 없었음</li>
     </ul>
   </li>
-  <li>xlsx 또는 csv 파일을 불러와 데이터를 전처리하고, 분석할 수 있는 기능 구현함</li>
 </ul>
 
 <p><br></p>
 
-<h4 id="4-결과">4. 결과</h4>
+<h4 id="3-3-실험-3주차">3-3. 실험 (3주차)</h4>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -231,7 +293,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/4_survey_tool/tool_result.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) 빠른 요약 결과 예시" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/2_survey_abtest/survey_a_3.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(A) 개인화 설문 (유저명 미포함)" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -245,7 +307,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/4_survey_tool/report_result.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) 서식을 입혀 보고서에 활용" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/2_survey_abtest/survey_b.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(B) 개인화 설문 (유저명 포함)" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -254,30 +316,26 @@
     </div>
 </div>
 <div class="caption">
-    (1) 빠른 요약 결과 예시, (2) 서식을 입혀 보고서에 활용
+    (A) 개인화 설문 (유저명 미포함), (B) 개인화 설문 (유저명 포함)
 </div>
 
 <ul>
-  <li>전처리 기능
+  <li>A그룹을 유저명을 포함하지 않고 고정된 텍스트로 노출, B그룹은 개인화 설문을 그대로 유지</li>
+  <li>결과
     <ul>
-      <li>불성실 응답 전처리: 동일한 문항만 선택해서 제출하는 불성실 응답 데이터를 구분</li>
-      <li>주관식 길이 전처리: 너무 짧게 작성한 주관식 문항을 구분</li>
-    </ul>
-  </li>
-  <li>분석 기능
-    <ul>
-      <li>복수 응답 분석: 복수 선택한 답변을 콤마(,)로 구분 후 표를 생성하여 엑셀로 저장</li>
-      <li>결과 빠른 요약: 문항(N개)과 교차 분석(M개)할 변수를 선택하여 N x M 개의 표를 생성하여 엑셀로 저장</li>
+      <li>B안의 노출 대비 설문 응답률이 A안 대비 약 1.2배 높았음</li>
+      <li>순수하게 ‘개인화’된 설문의 효과가 유의미함. 신뢰수준 95%에서 p-value가 약 0.05</li>
     </ul>
   </li>
 </ul>
 
 <p><br></p>
 
-<h4 id="5-주요-성과">5. 주요 성과</h4>
+<h4 id="4-주요-성과">4. 주요 성과</h4>
 
 <ul>
-  <li>설문 결과 분석에 걸리는 소요 시간을 약 90% 이상 단축</li>
+  <li>개인화된 설문 노출의 효과를 측정할 수 있었음 (약 20% 상승)</li>
+  <li>계속 동일한 디자인의 설문을 노출하는 것보다 정기적으로 변경하는 것이 효과가 있음을 확인</li>
 </ul>
 
 

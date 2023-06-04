@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>a post with images | Sihyeong  Ahn</title>
+    <title>온라인 게임 이탈요인 분석 및 대시보드 구축 | Sihyeong  Ahn</title>
     <meta name="author" content="Sihyeong  Ahn">
-    <meta name="description" content="this is what included images could look like">
+    <meta name="description" content="설문으로 부정 경험 수집 후 이탈 유저와 잔존 유저의 경험을 비교">
     <meta name="keywords" content="ux-researcher, product-analyst,">
 
 
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://debug-log.github.io/projects/1_project/">
+    <link rel="canonical" href="https://debug-log.github.io/projects/1_churn_analysis/">
 
     <!-- Dark Mode -->
     
@@ -112,57 +112,76 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
-
+        <!-- project.html -->
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">a post with images</h1>
-    <p class="post-meta">May 15, 2015</p>
-    <p class="post-tags">
-      <a href="/blog/2015"> <i class="fas fa-calendar fa-sm"></i> 2015 </a>
-        ·  
-        <a href="/blog/tag/formatting">
-          <i class="fas fa-hashtag fa-sm"></i> formatting</a>  
-          <a href="/blog/tag/images">
-          <i class="fas fa-hashtag fa-sm"></i> images</a>  
-          
-        ·  
-        <a href="/blog/category/sample-posts">
-          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
-          
+    <h1 class="post-title">온라인 게임 이탈요인 분석 및 대시보드 구축</h1>
 
-    </p>
+    <p class="post-description">설문으로 부정 경험 수집 후 이탈 유저와 잔존 유저의 경험을 비교</p>
+    <p class="post-meta">June, 2023</p>
+    <p></p>
+    <div class="post-info">
+<li>
+<b>주요역할</b>         |  프로젝트 리딩, 참여율 50%</li>
+<li>
+<b>사용 언어/툴</b>  |  Python, Spark, Tableau</li>
+    </div>
+    <p style="font-size: 0.7em; color:gray; padding-top: 10px; text-align:right">※보안 이슈로 일부 이미지와 데이터는 임의로 가공하였습니다.</p>
   </header>
 
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p>This is an example post with image galleries.</p>
+  <article>
+    <hr>
+<p><br></p>
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+<h4 id="1-배경">1. 배경</h4>
+
+<ul>
+  <li>온라인 커뮤니티, VoC 수집을 통해 유저들이 겪는 여러 부정 경험을 수집한 상황</li>
+  <li>어떤 부정 경험이 정말 이탈에 영향을 주는 지를 알고 싶음</li>
+</ul>
+
+<p><br></p>
+
+<h4 id="2-목표">2. 목표</h4>
+
+<ul>
+  <li>온라인 게임 유저의 주요 이탈 원인 분석</li>
+  <li>유저들의 부정 경험 중 이탈에 영향을 주는 부정 경험 파악하여 액션플랜 도출</li>
+</ul>
+
+<p><br></p>
+
+<h4 id="3-과정">3. 과정</h4>
+
+<ul>
+  <li>유저들의 주요 부정 경험들을 분류하여 설문조사 설계
+    <ul>
+      <li>약 10가지 카테고리, 약 50가지의 부정 경험을 정의함</li>
+    </ul>
+  </li>
+  <li>이탈 위험이 높은 유저에게 설문을 배포하여 부정 경험 응답을 수집
+    <ul>
+      <li>이탈 확률은 Data Scientist가 개발한 모델을 활용</li>
+    </ul>
+  </li>
+  <li>매일 수집된 설문 데이터는 ETL을 거쳐 Tableau에서 시각화할 수 있는 테이블로 적재
+    <ul>
+      <li>Spark, Airflow 활용</li>
+      <li>D+N day 이탈 여부 판단, 유저 세그먼트 구분을 위한 데이터 조인</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="row">
+    <div class="col-sm mt-md-0" style="text-align: center;">
         <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/1_churn_analysis/dashboard.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Tableau로 시각화한 결과물 예시" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -171,13 +190,18 @@
     </div>
 </div>
 <div class="caption">
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
+    Tableau로 시각화한 결과물 예시
 </div>
 
-<p>Images can be made zoomable.
-Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</code> to <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> tags that you want to make zoomable.</p>
+<ul>
+  <li>Tableau를 활용하여 시각화</li>
+</ul>
 
-<div class="row mt-3">
+<p><br></p>
+
+<h4 id="4-결과">4. 결과</h4>
+
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <figure>
 
@@ -185,21 +209,7 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/1_churn_analysis/churn.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="이탈 유저와 잔존 유저의 응답 비교" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -207,97 +217,25 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
 
     </div>
 </div>
-
-<p>The rest of the images in this post are all zoomable, arranged into different mini-galleries.</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
+<div class="caption">
+    이탈 유저와 잔존 유저의 응답 비교
 </div>
 
-    </div>
+<ul>
+  <li>설문 응답 이후 실제 이탈 여부를 트래킹하여 이탈 유저와 잔존 유저의 응답을 비교 분석</li>
+  <li>유저 세그먼트별 분석 (코어, 미들, 라이트 구분)</li>
+</ul>
+
+<p><br></p>
+
+<h4 id="5-주요-성과">5. 주요 성과</h4>
+
+<ul>
+  <li>이탈 유저와 잔존 유저의 응답 결과를 비교하여 부정 경험의 우선순위화</li>
+  <li>우선순위가 높은 부정 경험에 대해 액션 플랜 수립 근거 마련</li>
+</ul>
+
   </article>
-
-
-  
-    
-    <br>
-    <hr>
-    <br>
-    <ul class="list-disc pl-8"></ul>
-
-    <!-- Adds related posts to the end of an article -->
-    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
-    <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/custom-blockquotes/">a post with custom blockquotes</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/audios/">a post with audios</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/videos/">a post with videos</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/tables/">displaying beautiful tables with Bootstrap Tables</a>
-  </li>
 
 </div>
 
