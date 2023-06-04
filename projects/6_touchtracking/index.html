@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>모바일 게임 터치트래킹 분석 | Sihyeong  Ahn</title>
     <meta name="author" content="Sihyeong  Ahn">
-    <meta name="description" content="모바일 게임 가상 조익스틱 조작의 불편하다는 가설을 검증하기 위해 터치 영역을 히트맵으로 시각화한 프로젝트">
+    <meta name="description" content="모바일 게임 가상 조익스틱 조작의 불편하다는 가설을 검증하기 위해 터치 영역을 히트맵으로 시각화">
     <meta name="keywords" content="ux-researcher, product-analyst,">
 
 
@@ -118,12 +118,12 @@
   <header class="post-header">
     <h1 class="post-title">모바일 게임 터치트래킹 분석</h1>
 
-    <p class="post-description">모바일 게임 가상 조익스틱 조작의 불편하다는 가설을 검증하기 위해 터치 영역을 히트맵으로 시각화한 프로젝트</p>
+    <p class="post-description">모바일 게임 가상 조익스틱 조작의 불편하다는 가설을 검증하기 위해 터치 영역을 히트맵으로 시각화</p>
     <p class="post-meta">July, 2020</p>
     <p></p>
     <div class="post-info">
       <li>
-<b>주요역할</b>         |  구현 및 시각화 전담</li>
+<b>주요역할</b>         |  개발 및 시각화 검증 전담</li>
       <li>
 <b>사용 언어/툴</b>  |  Python</li>
     </div>
@@ -136,8 +136,8 @@
 <h4 id="1-배경">1. 배경</h4>
 
 <ul>
-  <li>신규 모바일 게임의 게임성을 검증하는 과정에서 조작성에 이슈가 있을 것으로 가설을 세움</li>
-  <li>캐릭터의 조작이 불편했으며, 근본적인 원인이 가상 조이스틱의 중심 영역이 유저의 생각보다 너무 쉽게 움직여 Thumb Zone을 자꾸 벗어나게 될 것이라는 가설을 세움</li>
+  <li>신규 모바일 게임의 게임성을 검증하는 과정에서 조작이 불편하다는 의견이 있었으며, 이를 객관적으로 검증하고자 함</li>
+  <li>가상 조이스틱의 중심 영역이 유저의 생각보다 너무 쉽게 움직여 Thumb Zone에서 너무 벗어나게 될 것이라는 가설을 세움</li>
 </ul>
 
 <p><br></p>
@@ -145,8 +145,8 @@
 <h4 id="2-목표">2. 목표</h4>
 
 <ul>
-  <li>사용자가 모바일 게임의 가상 조이스틱을 조작할 때 터치하는 영역을 시각화</li>
-  <li>조작에 이슈가 있을 것으로 판단하는 게임 vs 타 게임의 조작 범위를 비교하기</li>
+  <li>모바일 게임 가상 조이스틱의 조작용이성에 이슈가 있음을 객관적으로 검증</li>
+  <li>터치 영역을 시각화하여 타게임과 비교</li>
 </ul>
 
 <p><br></p>
@@ -161,7 +161,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/6_touchtracking/adb.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) adb를 활용해 디바이스 로그를 기록 중" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/adb.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) adb를 활용해 디바이스 로그를 기록 중" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -175,7 +175,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/6_touchtracking/touchlog.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) 기록된 텍스트 파일" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/touchlog.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) 기록된 텍스트 파일" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -189,7 +189,7 @@
 
 <ul>
   <li>안드로이드 디버깅 툴(adb)을 활용해 테스터가 플레이하는 동안의 터치 영역을 기록</li>
-  <li>디바이스에 기록된 터치 좌표 텍스트파일을 전처리하여, time 및 x, y 좌표 값을 가지는 DataFrame으로 변환</li>
+  <li>디바이스에 기록된 터치 좌표 텍스트파일을 전처리하여, timestamp 및 x, y 좌표 값을 가지는 정형 데이터로 변환</li>
 </ul>
 
 <p><br></p>
@@ -229,7 +229,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/6_touchtracking/brawlstars.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) Brawl Stars 터치 히트맵" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/brawlstars.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(1) Brawl Stars 터치 히트맵" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -243,7 +243,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/projects/6_touchtracking/battleground.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) PUBG 모바일 터치 히트맵" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/projects/6_touchtracking/battleground.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="(2) PUBG 모바일 터치 히트맵" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -265,10 +265,10 @@
 
 <p><br></p>
 
-<h4 id="5-주요-임팩트">5. 주요 임팩트</h4>
+<h4 id="5-주요-성과">5. 주요 성과</h4>
 
 <ul>
-  <li>가상 조이스틱의 중심영역이 너무 많이 움직여 조작이 불편하다는 가설을 채택</li>
+  <li>타 게임 대비 가상 조이스틱의 중심영역이 너무 많이 움직여 조작이 불편하다는 가설을 채택</li>
   <li>테스터의 정성의견과 종합하여 개발팀에 조작 이슈에 대한 근거를 제시하여 조작 방식을 변경함</li>
 </ul>
 
