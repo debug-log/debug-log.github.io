@@ -39,7 +39,7 @@ profile:
   *<span style="color:gray">2020.2 - Present</span>*  
   
   FIFA ONLINE 4 유저 리서치 전담  
-  게임 유저 리서치 end-to-end 진행  
+  게임 유저 리서치 지원 업무  
   정량/정성 방법론 수행 및 정성 조사 결과와 정량 지표의 혼합 분석 (Mixed-methods)  
   사용자행동로그분석, 데이터추출, 대시보드 제작  
   설문 데이터 분석 자동화 툴 개발  
@@ -62,7 +62,7 @@ profile:
 <br/>
 
 
-### 교육
+### 학력
 * **Human Environment and Design, Master of Design (MDes)**  
   Yonsei University, Seoul, Korea  
   학위논문 : 모바일 아케이드 게임의 일일 퀘스트 유형이 플레이어의 동기에 미치는 영향  
