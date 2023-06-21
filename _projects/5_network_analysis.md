@@ -1,6 +1,6 @@
 ---
 layout: project
-title: 주관식 네트워크 분석툴 개발
+title: 주관식 네트워크 분석 툴 개발
 description: 대량의 설문조사 주관식 응답 데이터를 분석하여 시각화
 img: assets/projects/5_network_analysis/preview.png
 importance: 5
